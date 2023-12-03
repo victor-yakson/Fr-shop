@@ -51,7 +51,8 @@ function App() {
     
     }
 
-    const electronics = items.filter((item) => item.category == "electronics");
+
+    const electronics = items.filter((item) => item.category === "electronics");
     const clothing = items.filter((item) => item.category === "clothing");
     const toys = items.filter((item) => item.category === "toys");
 
@@ -60,7 +61,10 @@ function App() {
     setElectronics(electronics);
     setClothing(clothing);
     setToys(toys);
+
+    
   }
+
   useEffect(() => {
     loadBlockchainData();
   }, []);

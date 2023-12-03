@@ -27,6 +27,7 @@ async function main() {
     const transaction = await dappazon.connect(deployer).list(
       items[i].id,
       items[i].name,
+      
       items[i].category,
       items[i].image,
       tokens(items[i].price),
